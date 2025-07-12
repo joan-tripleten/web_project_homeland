@@ -1,0 +1,134 @@
+.header {
+  max-width: 984px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  margin: auto;
+  margin-top: 34px;
+}
+
+.header__icon {
+  max-height: 69px;
+  max-width: 255px;
+}
+
+.header__lead {
+  margin-top: 91px;
+  max-width: 984px;
+}
+
+.header__title {
+  margin: auto;
+  max-width: 720px;
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 96px;
+  leading-trim: NONE;
+  line-height: 100px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.header__subtitle {
+  margin: auto;
+  margin-top: 32px;
+  max-width: 720px;
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 30px;
+  leading-trim: NONE;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.header__wrapper {
+  max-width: 984px;
+}
+
+.header__img {
+  margin-top: 64px;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .header__icon {
+    max-height: 66px;
+    max-width: 254x;
+  }
+
+  .header__title {
+    max-width: 530px;
+    /* Tipografía */
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 75px;
+    leading-trim: NONE;
+    line-height: 79px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .header__subtitle {
+    margin-top: 25px;
+  }
+
+  .header__img {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__logo {
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .header__icon {
+    max-width: 188px;
+    max-height: 52px;
+  }
+
+  .header__lead {
+    margin-top: 50px;
+  }
+
+  .header__title {
+    max-width: 228px;
+    /* Tipografía */
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 40px;
+    leading-trim: NONE;
+    line-height: 44px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .header__subtitle {
+    margin-top: 16px;
+    /* Tipografía */
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .header__img {
+    margin-top: 40px;
+  }
+}
