@@ -54,7 +54,7 @@
 }
 
 .place__wrapper {
-  width: auto;
+  max-width: auto;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -67,6 +67,7 @@
 
 .place__wrapper:hover {
   cursor: pointer;
+  opacity: 0.5;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -166,6 +167,19 @@
   }
 }
 
+@media screen and (max-width: 640px) {
+  /* Este lo agregué porque se estiraba mucho el texto */
+
+  .place {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .place__button {
+    width: 189px;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .places {
     margin-top: 32px;
@@ -194,13 +208,13 @@
     margin: auto;
   }
 
-  .placer__wrapper {
+  .place__wrapper {
     height: 320px;
     overflow: hidden;
   }
 
   .place__image {
-    height: 100%;
+    width: 100%;
   }
 
   .place__paragraphs {
@@ -216,7 +230,9 @@
   }
 
   .place__button {
+    width: 289px;
     margin: auto;
+    /* Tipografía */
     font-family: Inter;
     font-weight: 600;
     font-size: 14px;
