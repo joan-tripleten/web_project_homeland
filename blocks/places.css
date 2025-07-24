@@ -1,0 +1,228 @@
+.places {
+  max-width: 987px;
+  margin: auto;
+  margin-top: 92px;
+}
+
+.place {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto 460px auto;
+  row-gap: 48px;
+  column-gap: 40px;
+  margin-top: 80px;
+  max-width: 984px;
+}
+
+.place__title {
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 72px;
+  leading-trim: NONE;
+  line-height: 76px;
+  letter-spacing: 0%;
+}
+
+.place__website {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.place__url-heading {
+  margin-bottom: 8px;
+  color: hsla(0, 0%, 67%, 1);
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 12%;
+  text-transform: uppercase;
+}
+
+.place__artist {
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.place__wrapper {
+  width: auto;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.place__image {
+  max-width: 100%;
+  box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.5);
+}
+
+.place__wrapper:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.place__paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-row: span 2;
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 163%;
+  letter-spacing: 0%;
+}
+
+.place__frame {
+  display: flex;
+}
+
+.place__button {
+  height: 48px;
+  width: 289px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+  /* Tipografía */
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.place__button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 120, 254, 0.25) 0%,
+    rgba(0, 58, 123, 0.25) 99.98%
+  );
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: 720px;
+    margin-top: 88px;
+  }
+
+  .place {
+    grid-template-columns: 340px 1fr;
+    grid-template-rows: auto 340px auto;
+    row-gap: 48px;
+    column-gap: 28px;
+    margin-top: 80px;
+    max-width: 984px;
+  }
+
+  .place__title {
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 42px;
+    leading-trim: NONE;
+    line-height: 46px;
+    letter-spacing: 0%;
+  }
+
+  .place__url-heading {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 12%;
+    text-transform: uppercase;
+  }
+
+  .place__artist {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 22px;
+    letter-spacing: 0%;
+  }
+
+  .place__paragraphs {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 163%;
+    letter-spacing: 0%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places {
+    margin-top: 32px;
+  }
+
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 30px;
+  }
+
+  .place__title {
+    width: 288px;
+    margin: auto;
+    /* Tipografía */
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 32px;
+    leading-trim: NONE;
+    line-height: 35px;
+    letter-spacing: 0%;
+  }
+
+  .place__website {
+    width: 288px;
+    margin: auto;
+  }
+
+  .placer__wrapper {
+    height: 320px;
+    overflow: hidden;
+  }
+
+  .place__image {
+    height: 100%;
+  }
+
+  .place__paragraphs {
+    width: 288px;
+    margin: auto;
+    /* Tipografía */
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 163%;
+    letter-spacing: 0%;
+  }
+
+  .place__button {
+    margin: auto;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
